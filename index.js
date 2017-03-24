@@ -81,7 +81,7 @@ function entropyToMnemonic (entropy, wordlist) {
     return wordlist[index]
   })
 
-  return wordlist === JAPANESE_WORDLIST ? words.join('\u3000') : words.join(' ')
+  return words.join(' ')
 }
 
 function generateMnemonic (strength, rng, wordlist) {
